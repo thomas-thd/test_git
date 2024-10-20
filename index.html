@@ -1,13 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cœur Géant avec Dégradé Animé</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      background: linear-gradient(45deg, #ff4b5c, #ff416c, #4b79ff, #42e695);
+      background-size: 400% 400%;
+      animation: gradientAnimation 10s infinite alternate;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+
+    .heart-emoji {
+      font-size: 500px; /* Taille du cœur */
+      text-align: center;
+      line-height: 1;
+    }
+  </style>
 </head>
-<body bgcolor="red">
-    <h1> hello  </h1>
-    <h2> modification</h2>
-    
+<body>
+  <div class="heart-emoji">❤️</div>
 </body>
 </html>
